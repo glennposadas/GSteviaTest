@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		274180781D7BCA5C0035AEFB /* GStevia+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274180771D7BCA5C0035AEFB /* GStevia+UIColor.swift */; };
+		2741807A1D7BCA640035AEFB /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274180791D7BCA640035AEFB /* HomeTableViewController.swift */; };
+		2741807C1D7BCA780035AEFB /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2741807B1D7BCA780035AEFB /* ChatTableViewCell.swift */; };
+		2741807E1D7BCA7F0035AEFB /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2741807D1D7BCA7F0035AEFB /* Message.swift */; };
+		274180801D7BEBF20035AEFB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2741807F1D7BEBF20035AEFB /* User.swift */; };
+		274180821D7C2E4F0035AEFB /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274180811D7C2E4F0035AEFB /* TestViewController.swift */; };
+		274180841D7C31D40035AEFB /* GStevia+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274180831D7C31D40035AEFB /* GStevia+UIImageView.swift */; };
+		27B6675B1D7B321000D811BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B6675A1D7B321000D811BC /* AppDelegate.swift */; };
+		27B667621D7B321000D811BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27B667611D7B321000D811BC /* Assets.xcassets */; };
+		27B667651D7B321000D811BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27B667631D7B321000D811BC /* LaunchScreen.storyboard */; };
+		27B667701D7B321000D811BC /* GSteviaTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B6676F1D7B321000D811BC /* GSteviaTestTests.swift */; };
+		27B6677B1D7B321000D811BC /* GSteviaTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B6677A1D7B321000D811BC /* GSteviaTestUITests.swift */; };
+		364211BB114A12C081123374 /* Pods_GSteviaTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72179E997424EFFDF391C40 /* Pods_GSteviaTestUITests.framework */; };
+		C19473B84B59AAD150B7D906 /* Pods_GSteviaTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F221BE57BA5FB73549D7416F /* Pods_GSteviaTestTests.framework */; };
+		E1FD5501B1807943EFD5F47D /* Pods_GSteviaTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0865AAD06BC8F1FA7291B4 /* Pods_GSteviaTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27B6676C1D7B321000D811BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27B6674F1D7B321000D811BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27B667561D7B321000D811BC;
+			remoteInfo = GSteviaTest;
+		};
+		27B667771D7B321000D811BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27B6674F1D7B321000D811BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27B667561D7B321000D811BC;
+			remoteInfo = GSteviaTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0177C7ADBD3BD5F91A59108F /* Pods-GSteviaTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSteviaTestUITests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GSteviaTestUITests/Pods-GSteviaTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0C0865AAD06BC8F1FA7291B4 /* Pods_GSteviaTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GSteviaTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		274180771D7BCA5C0035AEFB /* GStevia+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "GStevia+UIColor.swift"; path = "Classes/Utilities/GStevia+UIColor.swift"; sourceTree = "<group>"; };
+		274180791D7BCA640035AEFB /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeTableViewController.swift; path = Classes/Controllers/HomeTableViewController.swift; sourceTree = "<group>"; };
+		2741807B1D7BCA780035AEFB /* ChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatTableViewCell.swift; path = Classes/Views/ChatTableViewCell.swift; sourceTree = "<group>"; };
+		2741807D1D7BCA7F0035AEFB /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Message.swift; path = Classes/Models/Message.swift; sourceTree = "<group>"; };
+		2741807F1D7BEBF20035AEFB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Classes/Models/User.swift; sourceTree = "<group>"; };
+		274180811D7C2E4F0035AEFB /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		274180831D7C31D40035AEFB /* GStevia+UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "GStevia+UIImageView.swift"; path = "Classes/Utilities/GStevia+UIImageView.swift"; sourceTree = "<group>"; };
+		27B667571D7B321000D811BC /* GSteviaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSteviaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B6675A1D7B321000D811BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27B667611D7B321000D811BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27B667641D7B321000D811BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		27B667661D7B321000D811BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27B6676B1D7B321000D811BC /* GSteviaTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GSteviaTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B6676F1D7B321000D811BC /* GSteviaTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSteviaTestTests.swift; sourceTree = "<group>"; };
+		27B667711D7B321000D811BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27B667761D7B321000D811BC /* GSteviaTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GSteviaTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B6677A1D7B321000D811BC /* GSteviaTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSteviaTestUITests.swift; sourceTree = "<group>"; };
+		27B6677C1D7B321000D811BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		469EA656A8697B306C5EE8DF /* Pods-GSteviaTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSteviaTestTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-GSteviaTestTests/Pods-GSteviaTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		69F032B4FF486D641BFAF3C2 /* Pods-GSteviaTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSteviaTest.release.xcconfig"; path = "../Pods/Target Support Files/Pods-GSteviaTest/Pods-GSteviaTest.release.xcconfig"; sourceTree = "<group>"; };
+		6BDBE9FA03752CA9CCF69BF3 /* Pods-GSteviaTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSteviaTestTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GSteviaTestTests/Pods-GSteviaTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6DF200569F4F1ADF158F85FB /* Pods-GSteviaTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSteviaTest.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GSteviaTest/Pods-GSteviaTest.debug.xcconfig"; sourceTree = "<group>"; };
+		A72179E997424EFFDF391C40 /* Pods_GSteviaTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GSteviaTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7022AE34F7DFDF8C0C67764 /* Pods-GSteviaTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSteviaTestUITests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-GSteviaTestUITests/Pods-GSteviaTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F221BE57BA5FB73549D7416F /* Pods_GSteviaTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GSteviaTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27B667541D7B321000D811BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1FD5501B1807943EFD5F47D /* Pods_GSteviaTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B667681D7B321000D811BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19473B84B59AAD150B7D906 /* Pods_GSteviaTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B667731D7B321000D811BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364211BB114A12C081123374 /* Pods_GSteviaTestUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27B6674E1D7B321000D811BC = {
+			isa = PBXGroup;
+			children = (
+				27B667591D7B321000D811BC /* GSteviaTest */,
+				27B6676E1D7B321000D811BC /* GSteviaTestTests */,
+				27B667791D7B321000D811BC /* GSteviaTestUITests */,
+				27B667581D7B321000D811BC /* Products */,
+				2BF02E935CF1D630B4BCC370 /* Pods */,
+				4410751D58414AC287F5110E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		27B667581D7B321000D811BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27B667571D7B321000D811BC /* GSteviaTest.app */,
+				27B6676B1D7B321000D811BC /* GSteviaTestTests.xctest */,
+				27B667761D7B321000D811BC /* GSteviaTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27B667591D7B321000D811BC /* GSteviaTest */ = {
+			isa = PBXGroup;
+			children = (
+				27B6678B1D7B503000D811BC /* Models */,
+				27B6678A1D7B502700D811BC /* Views */,
+				27B667881D7B500000D811BC /* Controllers */,
+				27B667891D7B501100D811BC /* Utilities */,
+				27B6675A1D7B321000D811BC /* AppDelegate.swift */,
+				27B667611D7B321000D811BC /* Assets.xcassets */,
+				27B667631D7B321000D811BC /* LaunchScreen.storyboard */,
+				27B667661D7B321000D811BC /* Info.plist */,
+			);
+			path = GSteviaTest;
+			sourceTree = "<group>";
+		};
+		27B6676E1D7B321000D811BC /* GSteviaTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				27B6676F1D7B321000D811BC /* GSteviaTestTests.swift */,
+				27B667711D7B321000D811BC /* Info.plist */,
+			);
+			path = GSteviaTestTests;
+			sourceTree = "<group>";
+		};
+		27B667791D7B321000D811BC /* GSteviaTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				27B6677A1D7B321000D811BC /* GSteviaTestUITests.swift */,
+				27B6677C1D7B321000D811BC /* Info.plist */,
+			);
+			path = GSteviaTestUITests;
+			sourceTree = "<group>";
+		};
+		27B667881D7B500000D811BC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				274180791D7BCA640035AEFB /* HomeTableViewController.swift */,
+				274180811D7C2E4F0035AEFB /* TestViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		27B667891D7B501100D811BC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				274180771D7BCA5C0035AEFB /* GStevia+UIColor.swift */,
+				274180831D7C31D40035AEFB /* GStevia+UIImageView.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		27B6678A1D7B502700D811BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2741807B1D7BCA780035AEFB /* ChatTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		27B6678B1D7B503000D811BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2741807D1D7BCA7F0035AEFB /* Message.swift */,
+				2741807F1D7BEBF20035AEFB /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2BF02E935CF1D630B4BCC370 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DF200569F4F1ADF158F85FB /* Pods-GSteviaTest.debug.xcconfig */,
+				69F032B4FF486D641BFAF3C2 /* Pods-GSteviaTest.release.xcconfig */,
+				6BDBE9FA03752CA9CCF69BF3 /* Pods-GSteviaTestTests.debug.xcconfig */,
+				469EA656A8697B306C5EE8DF /* Pods-GSteviaTestTests.release.xcconfig */,
+				0177C7ADBD3BD5F91A59108F /* Pods-GSteviaTestUITests.debug.xcconfig */,
+				B7022AE34F7DFDF8C0C67764 /* Pods-GSteviaTestUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4410751D58414AC287F5110E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C0865AAD06BC8F1FA7291B4 /* Pods_GSteviaTest.framework */,
+				F221BE57BA5FB73549D7416F /* Pods_GSteviaTestTests.framework */,
+				A72179E997424EFFDF391C40 /* Pods_GSteviaTestUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27B667561D7B321000D811BC /* GSteviaTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27B6677F1D7B321000D811BC /* Build configuration list for PBXNativeTarget "GSteviaTest" */;
+			buildPhases = (
+				1B656222ECE594A7A5C84611 /* [CP] Check Pods Manifest.lock */,
+				27B667531D7B321000D811BC /* Sources */,
+				27B667541D7B321000D811BC /* Frameworks */,
+				27B667551D7B321000D811BC /* Resources */,
+				CCF7EA5FB1D5A6AD8D927A37 /* [CP] Embed Pods Frameworks */,
+				DDC6722197FA305786D082C0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GSteviaTest;
+			productName = GSteviaTest;
+			productReference = 27B667571D7B321000D811BC /* GSteviaTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27B6676A1D7B321000D811BC /* GSteviaTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27B667821D7B321000D811BC /* Build configuration list for PBXNativeTarget "GSteviaTestTests" */;
+			buildPhases = (
+				4CD5ADA34D931E17C2121A3B /* [CP] Check Pods Manifest.lock */,
+				27B667671D7B321000D811BC /* Sources */,
+				27B667681D7B321000D811BC /* Frameworks */,
+				27B667691D7B321000D811BC /* Resources */,
+				681357277FB76A341471EDC3 /* [CP] Embed Pods Frameworks */,
+				BB8E2FC5C54AEC11700B1EA8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27B6676D1D7B321000D811BC /* PBXTargetDependency */,
+			);
+			name = GSteviaTestTests;
+			productName = GSteviaTestTests;
+			productReference = 27B6676B1D7B321000D811BC /* GSteviaTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		27B667751D7B321000D811BC /* GSteviaTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27B667851D7B321000D811BC /* Build configuration list for PBXNativeTarget "GSteviaTestUITests" */;
+			buildPhases = (
+				DCB4EEC841699E1B3DA882E7 /* [CP] Check Pods Manifest.lock */,
+				27B667721D7B321000D811BC /* Sources */,
+				27B667731D7B321000D811BC /* Frameworks */,
+				27B667741D7B321000D811BC /* Resources */,
+				074F94EC959B912042D35489 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27B667781D7B321000D811BC /* PBXTargetDependency */,
+			);
+			name = GSteviaTestUITests;
+			productName = GSteviaTestUITests;
+			productReference = 27B667761D7B321000D811BC /* GSteviaTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27B6674F1D7B321000D811BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Citus Lab, Inc.";
+				TargetAttributes = {
+					27B667561D7B321000D811BC = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					27B6676A1D7B321000D811BC = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 27B667561D7B321000D811BC;
+					};
+					27B667751D7B321000D811BC = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 27B667561D7B321000D811BC;
+					};
+				};
+			};
+			buildConfigurationList = 27B667521D7B321000D811BC /* Build configuration list for PBXProject "GSteviaTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27B6674E1D7B321000D811BC;
+			productRefGroup = 27B667581D7B321000D811BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27B667561D7B321000D811BC /* GSteviaTest */,
+				27B6676A1D7B321000D811BC /* GSteviaTestTests */,
+				27B667751D7B321000D811BC /* GSteviaTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27B667551D7B321000D811BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B667651D7B321000D811BC /* LaunchScreen.storyboard in Resources */,
+				27B667621D7B321000D811BC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B667691D7B321000D811BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B667741D7B321000D811BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		074F94EC959B912042D35489 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-GSteviaTestUITests/Pods-GSteviaTestUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B656222ECE594A7A5C84611 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4CD5ADA34D931E17C2121A3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		681357277FB76A341471EDC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-GSteviaTestTests/Pods-GSteviaTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB8E2FC5C54AEC11700B1EA8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-GSteviaTestTests/Pods-GSteviaTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCF7EA5FB1D5A6AD8D927A37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-GSteviaTest/Pods-GSteviaTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCB4EEC841699E1B3DA882E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DDC6722197FA305786D082C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-GSteviaTest/Pods-GSteviaTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27B667531D7B321000D811BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274180821D7C2E4F0035AEFB /* TestViewController.swift in Sources */,
+				2741807A1D7BCA640035AEFB /* HomeTableViewController.swift in Sources */,
+				2741807C1D7BCA780035AEFB /* ChatTableViewCell.swift in Sources */,
+				274180801D7BEBF20035AEFB /* User.swift in Sources */,
+				2741807E1D7BCA7F0035AEFB /* Message.swift in Sources */,
+				27B6675B1D7B321000D811BC /* AppDelegate.swift in Sources */,
+				274180841D7C31D40035AEFB /* GStevia+UIImageView.swift in Sources */,
+				274180781D7BCA5C0035AEFB /* GStevia+UIColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B667671D7B321000D811BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B667701D7B321000D811BC /* GSteviaTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B667721D7B321000D811BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B6677B1D7B321000D811BC /* GSteviaTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27B6676D1D7B321000D811BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27B667561D7B321000D811BC /* GSteviaTest */;
+			targetProxy = 27B6676C1D7B321000D811BC /* PBXContainerItemProxy */;
+		};
+		27B667781D7B321000D811BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27B667561D7B321000D811BC /* GSteviaTest */;
+			targetProxy = 27B667771D7B321000D811BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27B667631D7B321000D811BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27B667641D7B321000D811BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27B6677D1D7B321000D811BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27B6677E1D7B321000D811BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27B667801D7B321000D811BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DF200569F4F1ADF158F85FB /* Pods-GSteviaTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GSteviaTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cituslab.app.GSteviaTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		27B667811D7B321000D811BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69F032B4FF486D641BFAF3C2 /* Pods-GSteviaTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GSteviaTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cituslab.app.GSteviaTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		27B667831D7B321000D811BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BDBE9FA03752CA9CCF69BF3 /* Pods-GSteviaTestTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GSteviaTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cituslab.app.GSteviaTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GSteviaTest.app/GSteviaTest";
+			};
+			name = Debug;
+		};
+		27B667841D7B321000D811BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 469EA656A8697B306C5EE8DF /* Pods-GSteviaTestTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GSteviaTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cituslab.app.GSteviaTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GSteviaTest.app/GSteviaTest";
+			};
+			name = Release;
+		};
+		27B667861D7B321000D811BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0177C7ADBD3BD5F91A59108F /* Pods-GSteviaTestUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = GSteviaTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cituslab.app.GSteviaTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GSteviaTest;
+			};
+			name = Debug;
+		};
+		27B667871D7B321000D811BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7022AE34F7DFDF8C0C67764 /* Pods-GSteviaTestUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = GSteviaTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cituslab.app.GSteviaTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GSteviaTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27B667521D7B321000D811BC /* Build configuration list for PBXProject "GSteviaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27B6677D1D7B321000D811BC /* Debug */,
+				27B6677E1D7B321000D811BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27B6677F1D7B321000D811BC /* Build configuration list for PBXNativeTarget "GSteviaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27B667801D7B321000D811BC /* Debug */,
+				27B667811D7B321000D811BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27B667821D7B321000D811BC /* Build configuration list for PBXNativeTarget "GSteviaTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27B667831D7B321000D811BC /* Debug */,
+				27B667841D7B321000D811BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27B667851D7B321000D811BC /* Build configuration list for PBXNativeTarget "GSteviaTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27B667861D7B321000D811BC /* Debug */,
+				27B667871D7B321000D811BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27B6674F1D7B321000D811BC /* Project object */;
+}
