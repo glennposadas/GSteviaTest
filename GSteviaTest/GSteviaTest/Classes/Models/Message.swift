@@ -10,21 +10,25 @@ import UIKit
 
 struct Message {
     let key: String! // user key
-    let messages: [String]!
-    let timeStamps: [String]!
+    let message: String!
+    let timeStamp: String!
+    let isUnread: Bool!
     
-    init?(key: String, json: AnyObject) {
+    init?(json: AnyObject) {
         guard let json = json as? [String: AnyObject] else {
             return nil
         }
         
-        guard let messages = json["messages"] as? [String],
-            timeStamps = json["time_stamps"] as? [String] else {
+        guard let key = json["key"] as? String,
+            message = json["message"] as? String,
+            timeStamp = json["time_stamp"] as? String,
+            isUnread = json["is_unread"] as? Bool else {
                 return nil
         }
         
         self.key = key
-        self.messages = messages
-        self.timeStamps = timeStamps
+        self.message = message
+        self.timeStamp = timeStamp
+        self.isUnread = isUnread
     }
 }

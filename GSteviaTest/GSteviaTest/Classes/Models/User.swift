@@ -11,15 +11,16 @@ import UIKit
 struct User {
     let key: String!
     let fullName: String!
-    let image: UIImage!
+    let image: String!
     
-    init?(key: String, json: AnyObject) {
+    init?(json: AnyObject) {
         guard let json = json as? [String: AnyObject] else {
             return nil
         }
         
-        guard let fullName = json["fullname"] as? String,
-            image = json["image"] as? UIImage else {
+        guard let key = json["key"] as? String,
+            fullName = json["fullname"] as? String,
+            image = json["image"] as? String else {
                 return nil
         }
         

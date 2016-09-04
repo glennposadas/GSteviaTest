@@ -12,45 +12,39 @@ import UIKit
 class ChatTableViewCell: UITableViewCell {
     
     // MARK: - Properties
-    var userImage: UIImage?
-    var userFullName: NSString?
-    var message: NSString?
-    var timeStamp: NSString?
+    var isUnread = false
+    var userFullNameLabel = UILabel()
+    var messageLabel = UILabel()
+    var timeStampLabel = UILabel()
+    var userImageView = UIImageView()
     
     // MARK: - Functions
-    func newImageview(image: UIImage?) -> UIImageView {
-        let newImageview = UIImageView(image: image)
-        newImageview.frame = CGRectZero
-        newImageview.contentMode = .ScaleAspectFill
-        
-        return newImageview
-    }
     
     func setupCellViews() {
-        if userImage == nil {
-            userImage = UIImage(named: "placeholder")
+        let fbMessengerIcon = UIImageView(image: UIImage(named: "messenger_icon"))
+        fbMessengerIcon.contentMode = .ScaleAspectFill
+                
+        timeStampLabel.textColor = GSteviaColor.color.blueTintColor
+        
+        userImageView.contentMode = .ScaleAspectFill
+        
+        if isUnread {
+            print("Unread is true!")
+            messageLabel.font = UIFont.boldSystemFontOfSize(17.0)
         }
         
-        let userImageView = newImageview(userImage)
-        let fbMessengerIcon = newImageview(UIImage(named: "messenger_icon"))
-        
-        let userFullNameLabel = UILabel()
-        userFullNameLabel.text = "Ryan O'Rourke"
-        
-        let messageLabel = UILabel()
-        messageLabel.textColor = GSteviaColor.color.blueTintColor
-        messageLabel.text = "Sure thing."
-        
         let stackView = UIStackView()
-        stackView.addArrangedSubview(userFullNameLabel)
         stackView.addArrangedSubview(messageLabel)
+        stackView.addArrangedSubview(userFullNameLabel)
         stackView.axis = .Vertical
         stackView.distribution = .FillProportionally
         stackView.spacing = 5.0
-        stackView.backgroundColor = UIColor.redColor()
         
-        let timeStampLabel = UILabel()
-        timeStampLabel.text = "2:33pm"
+        stackView.layout([
+            userFullNameLabel.height(20.0),
+            messageLabel.height(15.0)
+        ])
+        
         
         sv([
             userImageView,
@@ -65,13 +59,12 @@ class ChatTableViewCell: UITableViewCell {
         ])
         
         layout([
-            
             userImageView.width(50.0),
             userImageView.centerVertically().height(50.0),
             |-userImageView,
             
             stackView.centerVertically(),
-            |-(userImageView.widthConstraint!.constant + 7.0)-stackView,
+            |-(userImageView.widthConstraint!.constant + 20.0)-stackView,
             
             timeStampLabel.centerVertically(),
             timeStampLabel-10.0-|,
@@ -95,6 +88,6 @@ class ChatTableViewCell: UITableViewCell {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
     }
 }

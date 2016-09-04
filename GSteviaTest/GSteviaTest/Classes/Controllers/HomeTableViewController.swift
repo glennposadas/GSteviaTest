@@ -13,13 +13,27 @@ class HomeTableViewController: UITableViewController {
 
     // MARK: - Properties
     var composeBarBtnItem: UIBarButtonItem?
-    var users = [User]()
+    var users = [User]() // ratio - user : message
+    var messages = [Message]()
     
     // MARK: - Functions
     // MARK: TableView Delegates and Data Source
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let chatCell = tableView.dequeueReusableCellWithIdentifier("ChatTableViewCell") as! ChatTableViewCell
+        
+        let currentUser = users[indexPath.row]
+        let messageOfCurrentUser = messages[indexPath.row]
+        
+        let imageString = currentUser.image
+        
+        chatCell.userImageView.image = UIImage(named: imageString)
+        chatCell.userFullNameLabel.text = currentUser.fullName
+        
+        chatCell.messageLabel.text = messageOfCurrentUser.message
+        chatCell.timeStampLabel.text = messageOfCurrentUser.timeStamp
+        chatCell.isUnread = messageOfCurrentUser.isUnread
+        
         return chatCell
     }
     
@@ -28,8 +42,7 @@ class HomeTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //return users.count
-        return 6
+        return users.count
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -41,10 +54,55 @@ class HomeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupScreen()
+        setupData()
     }
     
     func compose() {
         print("compose")
+    }
+    
+    func newImageview(image: UIImage?) -> UIImageView {
+        let newImageview = UIImageView(image: image)
+        newImageview.frame = CGRectZero
+        newImageview.contentMode = .ScaleAspectFill
+        
+        return newImageview
+    }
+    
+    func setupData() {
+        // mock up some json data
+        let messageJSON = [["key":"1", "message":"Sure thing", "time_stamp":"2:33 pm", "is_unread":true],
+                           ["key":"2", "message":"Peter Zich sent an image", "time_stamp":"2:30 pm","is_unread":true],
+                           ["key":"3", "message":"Going to Kevin's tonight?", "time_stamp":"2:29 pm","is_unread":false],
+                           ["key":"4", "message":"You sent a sticker", "time_stamp":"2:28 pm","is_unread":false],
+                           ["key":"5", "message":"OMG! This is a rush lol!", "time_stamp":"2:10 pm","is_unread":false]]
+        
+        let userJSON = [["key":"1", "fullname":"Ryan O'Rourke", "image":"person1"],
+                        ["key":"2", "fullname":"Peter Zich", "image":"person2"],
+                        ["key":"3", "fullname":"Mac Tyler", "image":"person3"],
+                        ["key":"4", "fullname":"Ben Langholz", "image":"person4"],
+                        ["key":"5", "fullname":"Rody Duterte", "image":"person5"]]
+        
+        // fast enum messageJSON
+        for messageData in messageJSON {
+            guard let newMessage = Message(json: messageData) else {
+                return
+            }
+            
+            messages.append(newMessage)
+        }
+        
+        // fast enum userJSON
+        for userData in userJSON {
+            guard let newUser = User(json: userData) else {
+                return
+            }
+            
+            users.append(newUser)
+        }
+        
+        // finally, reload
+        tableView.reloadData()
     }
     
     func setupScreen() {
