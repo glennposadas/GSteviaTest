@@ -32,7 +32,11 @@ class HomeTableViewController: UITableViewController {
         
         chatCell.messageLabel.text = messageOfCurrentUser.message
         chatCell.timeStampLabel.text = messageOfCurrentUser.timeStamp
-        chatCell.isUnread = messageOfCurrentUser.isUnread
+        
+        if messageOfCurrentUser.isUnread == true {
+            chatCell.userFullNameLabel.font = UIFont.boldSystemFontOfSize(17.0)
+            chatCell.messageLabel.font = UIFont.boldSystemFontOfSize(17.0)
+        }
         
         return chatCell
     }

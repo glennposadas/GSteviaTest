@@ -12,7 +12,6 @@ import UIKit
 class ChatTableViewCell: UITableViewCell {
     
     // MARK: - Properties
-    var isUnread = false
     var userFullNameLabel = UILabel()
     var messageLabel = UILabel()
     var timeStampLabel = UILabel()
@@ -28,11 +27,6 @@ class ChatTableViewCell: UITableViewCell {
         
         userImageView.contentMode = .ScaleAspectFill
         
-        if isUnread {
-            print("Unread is true!")
-            messageLabel.font = UIFont.boldSystemFontOfSize(17.0)
-        }
-        
         let stackView = UIStackView()
         stackView.addArrangedSubview(messageLabel)
         stackView.addArrangedSubview(userFullNameLabel)
@@ -41,8 +35,8 @@ class ChatTableViewCell: UITableViewCell {
         stackView.spacing = 5.0
         
         stackView.layout([
-            userFullNameLabel.height(20.0),
-            messageLabel.height(15.0)
+            userFullNameLabel.height(25.0),
+            messageLabel.height(25.0)
         ])
         
         
